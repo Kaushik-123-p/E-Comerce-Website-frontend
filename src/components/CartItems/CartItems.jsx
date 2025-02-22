@@ -67,7 +67,7 @@ const CartItems = () => {
               <h3 className="font-bold">${getTotalCartAmount()}</h3>
             </div>
           </div>
-          <button className=" w-[262px] h-[58px] outline-none border-none bg-red-500 text-white text-base font-semibold cursor-pointer  ">
+          <button className=" w-[262px] h-[58px] outline-none border-none bg-red-500 hover:bg-red-700  text-white text-base font-semibold cursor-pointer  ">
             PROCEED TO CHECKOUT
           </button>
         </div>

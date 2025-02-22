@@ -71,19 +71,19 @@ const ProductDisplay = (props) => {
             Select Size
           </h1>
           <div className="productdisplay-right-size  flex my-[30px] gap-5">
-            <div className="px-6 py-[18px] bg-gray-100 border border-gray-200 rounded cursor-pointer">
+            <div className="px-6 py-[18px] bg-gray-100 hover:bg-gray-200 border border-gray-200 rounded cursor-pointer">
               S
             </div>
-            <div className="px-6 py-[18px] bg-gray-100 border border-gray-200 rounded cursor-pointer">
+            <div className="px-6 py-[18px] bg-gray-100  hover:bg-gray-200  border border-gray-200 rounded cursor-pointer">
               M
             </div>
-            <div className="px-6 py-[18px] bg-gray-100 border border-gray-200 rounded cursor-pointer">
+            <div className="px-6 py-[18px] bg-gray-100 hover:bg-gray-200  border border-gray-200 rounded cursor-pointer">
               L
             </div>
-            <div className="px-6 py-[18px] bg-gray-100 border border-gray-200 rounded cursor-pointer">
+            <div className="px-6 py-[18px] bg-gray-100  hover:bg-gray-200 border border-gray-200 rounded cursor-pointer">
               XL
             </div>
-            <div className="px-6 py-[18px] bg-gray-100 border border-gray-200 rounded cursor-pointer">
+            <div className="px-6 py-[18px] bg-gray-100 hover:bg-gray-200  border border-gray-200 rounded cursor-pointer">
               XXL
             </div>
           </div>
@@ -92,8 +92,8 @@ const ProductDisplay = (props) => {
           onClick={() => {
             addToCart(product.id);
           }}
-          className="w-[200px] px-6 py-3 text-[16px] font-bold text-white bg-red-500 rounded outline-none cursor-pointer"
-        >
+          className="w-[200px] px-6 py-3 text-[16px] font-bold text-white bg-red-500 hover:bg-red-700 rounded outline-none cursor-pointer  "
+        > 
           ADD TO CART
         </button>
         <p className="productdisplay-right-category mt-[10px] gap-2">

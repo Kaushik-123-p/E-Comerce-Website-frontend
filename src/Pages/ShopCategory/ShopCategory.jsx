@@ -30,16 +30,22 @@ const ShopCategory = (props) => {
 
       <div className="flex items-center justify-center">
         <div className="shopcategory-products  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[90%]  p-4  ">
-          {all_product.map((item, i) => (
-            <Item
-              key={i}
-              id={item.id}
-              name={item.name}
-              image={item.image}
-              new_price={item.new_price}
-              old_price={item.old_price}
-            />
-          ))}
+          {all_product.map((item, i) => {
+            if (props.category === item.category) {
+              return (
+                <Item
+                  key={i}
+                  id={item.id}
+                  name={item.name}
+                  image={item.image}
+                  new_price={item.new_price}
+                  old_price={item.old_price}
+                />
+              )
+            } else {
+              return null
+            }
+          })}
         </div>
       </div>
 
